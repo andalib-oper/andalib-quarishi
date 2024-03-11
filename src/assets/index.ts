@@ -25,10 +25,23 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import peacock from './company/peacock.png';
+import fart from './company/fart.png';
+import stormtec from './company/stormtec.png';
+
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import docbook from './docbook.webp';
+import dopamine from './dopamine.webp';
+import gizmo from './gizmo.webp';
+import ultraqr from './ultraqr.webp';
+import vision from './vision.webp';
+
+import omniVillage from './omniVillage.png';
+import wooOrder from './wooOrder.jpg';
+
 
 export {
   logo,
@@ -59,4 +72,14 @@ export {
   carrent,
   jobit,
   tripguide,
+  peacock,
+  fart,
+  stormtec,
+  docbook,
+  dopamine,
+  gizmo,
+  ultraqr,
+  vision,
+  wooOrder,
+  omniVillage
 };

@@ -36,31 +36,28 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
+    const formElement = formRef.current?.elements;
+    if (!formElement) return;
+
     emailjs
-      .send(
-        emailjsConfig.serviceId,
-        emailjsConfig.templateId,
-        {
-          form_name: form.name,
-          to_name: config.html.fullName,
-          from_email: form.email,
-          to_email: config.html.email,
-          message: form.message,
-        },
-        emailjsConfig.accessToken
+      .sendForm(
+        'service_2vob9id',
+        'template_z0ouz2y',
+        formRef.current as HTMLFormElement,
+        'c-Y2UVeK1ll0PWeXf'
       )
       .then(
         () => {
           setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
+          alert('Thank you. I will get back to you as soon as possible.');
 
           setForm(INITIAL_STATE);
         },
-        (error) => {
+        error => {
           setLoading(false);
 
           console.log(error);
-          alert("Something went wrong.");
+          alert('Something went wrong.');
         }
       );
   };

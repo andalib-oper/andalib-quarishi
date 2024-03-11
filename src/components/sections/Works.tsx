@@ -1,7 +1,6 @@
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 
-import { github } from "../../assets";
 import { SectionWrapper } from "../../hoc";
 import { projects } from "../../constants";
 import { fadeIn } from "../../utils/motion";
@@ -15,7 +14,6 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
   description,
   tags,
   image,
-  sourceCodeLink,
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -31,9 +29,9 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
             <img
               src={image}
               alt={name}
-              className="h-full w-full rounded-2xl object-cover"
+              className="h-full w-full rounded-2xl object-contain"
             />
-            <div className="card-img_hover absolute inset-0 m-3 flex justify-end">
+            {/* <div className="card-img_hover absolute inset-0 m-3 flex justify-end">
               <div
                 onClick={() => window.open(sourceCodeLink, "_blank")}
                 className="black-gradient flex h-10 w-10 cursor-pointer items-center justify-center rounded-full"
@@ -44,7 +42,7 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
                   className="h-1/2 w-1/2 object-contain"
                 />
               </div>
-            </div>
+            </div> */}
           </div>
           <div className="mt-5">
             <h3 className="text-[24px] font-bold text-white">{name}</h3>
