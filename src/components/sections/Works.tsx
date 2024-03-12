@@ -1,22 +1,19 @@
 import Tilt from "react-parallax-tilt";
-import { motion } from "framer-motion";
 
 import { SectionWrapper } from "../../hoc";
 import { projects } from "../../constants";
-import { fadeIn } from "../../utils/motion";
 import { config } from "../../constants/config";
 import { Header } from "../atoms/Header";
 import { TProject } from "../../types";
 
 const ProjectCard: React.FC<{ index: number } & TProject> = ({
-  index,
   name,
   description,
   tags,
   image,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <div>
       <Tilt
         glareEnable
         tiltEnable
@@ -57,25 +54,23 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
           </div>
         </div>
       </Tilt>
-    </motion.div>
+    </div>
   );
 };
 
 const Works = () => {
   return (
     <>
-      <Header useMotion={true} {...config.sections.works} />
+      <Header useMotion={false} {...config.sections.works} />
 
-      <div className="flex w-full">
-        <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
-          className="text-secondary mt-3 max-w-3xl text-[17px] leading-[30px]"
-        >
-          {config.sections.works.content}
-        </motion.p>
-      </div>
+      <p
+        className="text-secondary mt-4 max-w-3xl text-[17px] leading-[30px]"
+        style={{ textAlign: 'left', transform:'none'}}
+      >
+        {config.sections.works.content}
+      </p>
 
-      <div className="mt-20 flex flex-wrap gap-7">
+      <div className="mt-20 flex flex-wrap gap-10 max-sm:justify-center">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
