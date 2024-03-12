@@ -31,14 +31,14 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
-    const formElement = formRef.current?.elements;
+    const formElement = formRef.current
     if (!formElement) return;
 
     emailjs
       .sendForm(
         'service_2vob9id',
         'template_z0ouz2y',
-        formRef.current as HTMLFormElement,
+        formRef.current as unknown as HTMLFormElement,
         'c-Y2UVeK1ll0PWeXf'
       )
       .then(
