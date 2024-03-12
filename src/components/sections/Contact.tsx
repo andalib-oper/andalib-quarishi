@@ -33,7 +33,6 @@ const Contact = () => {
 
     const formElement = formRef.current
     if (!formElement) return;
-
     emailjs
       .sendForm(
         'service_2vob9id',
