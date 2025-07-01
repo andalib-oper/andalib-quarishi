@@ -31,7 +31,9 @@ import {
   gizmo,
   ultraqr,
   wooOrder,
-  omniVillage
+  omniVillage,
+  nyk,
+  aimealplanner,
 } from "../assets";
 
 export const navLinks: TNavLink[] = [
@@ -118,10 +120,23 @@ const technologies: TTechnology[] = [
 const experiences: TExperience[] = [
   {
     title: 'React Native Developer',
+    companyName: 'Now You Know',
+    icon: nyk,
+    iconBg: '#fff',
+    date: 'December 2024 - Present',
+    points: [
+      'Developing and maintaining android applications using React Native and other related technologies.',
+      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
+      'Implementing responsive design and ensuring cross-browser compatibility.',
+      'Participating in code reviews and providing constructive feedback to other developers.',
+    ],
+  },
+  {
+    title: 'React Native Developer',
     companyName: 'Peacock India',
     icon: peacock,
     iconBg: '#fff',
-    date: 'April 2023 - Present',
+    date: 'April 2023 - December 2024',
     points: [
       'Developing and maintaining android applications using React Native and other related technologies.',
       'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
@@ -186,9 +201,29 @@ const testimonials: TTestimonial[] = [
 
 const projects: TProject[] = [
   {
-    name: 'Dopamine',
+    name: 'AI Meal Planner',
     description:
-      'Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.',
+      "The Healthy Me app is designed to help users achieve their health and fitness goals with ease through personalized nutrition and meal tracking.",
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'firebase',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'open-ai',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: aimealplanner,
+    sourceCodeLink: 'https://github.com/',
+  },
+  {
+    name: 'Dopamine',
+    description:"Dopamine is a healthcare app for doctors to manage patient data and medical history efficiently. It offers features like patient record management, appointment scheduling, detailed medical history tracking.",
     tags: [
       {
         name: 'react',
@@ -207,7 +242,7 @@ const projects: TProject[] = [
     sourceCodeLink: 'https://github.com/',
   },
   {
-    name: 'Vision',
+    name: 'Vizfleet',
     description:
       'Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.',
     tags: [
@@ -229,11 +264,10 @@ const projects: TProject[] = [
   },
   {
     name: 'Docbook',
-    description:
-      'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
+    description:"Manage patients, documents, payments & reminders securely in one app. Simplify your practice, focus on what matters most.",
     tags: [
       {
-        name: 'nextjs',
+        name: 'react',
         color: 'blue-text-gradient',
       },
       {
@@ -251,19 +285,23 @@ const projects: TProject[] = [
   {
     name: 'Gizmo',
     description:
-      'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
+      'A comprehensive app where users will get to know about the new gadgets and accessories that are available in the market.',
     tags: [
       {
         name: 'nextjs',
         color: 'blue-text-gradient',
       },
       {
-        name: 'supabase',
+        name: 'rest-api',
         color: 'green-text-gradient',
       },
       {
         name: 'css',
         color: 'pink-text-gradient',
+      },
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
       },
     ],
     image: gizmo,
@@ -271,15 +309,14 @@ const projects: TProject[] = [
   },
   {
     name: 'Ultra QR',
-    description:
-      'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
+    description:"Meet UltraQR – your easy-to-use ticket scanner app! When you use our app to scan a valid ticket, it happily shouts 'Allow In.' But, if the ticket isn't valid, it firmly declares 'Don't Allow.'",
     tags: [
       {
         name: 'nextjs',
         color: 'blue-text-gradient',
       },
       {
-        name: 'supabase',
+        name: 'firebase',
         color: 'green-text-gradient',
       },
       {
@@ -293,14 +330,14 @@ const projects: TProject[] = [
   {
     name: 'Woo Order',
     description:
-      'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
+      'A comprehensive food restaurant booking platform that allows users to book tables, order food, and track their orders in real-time.',
     tags: [
       {
         name: 'nextjs',
         color: 'blue-text-gradient',
       },
       {
-        name: 'supabase',
+        name: 'firebase',
         color: 'green-text-gradient',
       },
       {
@@ -314,19 +351,23 @@ const projects: TProject[] = [
   {
     name: 'Omni Village',
     description:
-      'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
+      'A comprehensive agricultural app that allows users to add there crops and track their progress.',
     tags: [
       {
         name: 'nextjs',
         color: 'blue-text-gradient',
       },
       {
-        name: 'supabase',
+        name: 'rest-api',
         color: 'green-text-gradient',
       },
       {
         name: 'css',
         color: 'pink-text-gradient',
+      },
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
       },
     ],
     image: omniVillage,

@@ -28,6 +28,7 @@ import tesla from "./company/tesla.png";
 import peacock from './company/peacock.png';
 import fart from './company/fart.png';
 import stormtec from './company/stormtec.png';
+import nyk from './company/nyk.png'
 
 
 import carrent from "./carrent.png";
@@ -37,10 +38,11 @@ import docbook from './docbook.webp';
 import dopamine from './dopamine.webp';
 import gizmo from './gizmo.webp';
 import ultraqr from './ultraqr.webp';
-import vision from './vision.webp';
+import vision from './vision.png';
 
 import omniVillage from './omniVillage.png';
 import wooOrder from './wooOrder.jpg';
+import aimealplanner from './aimealplanner.png';
 
 
 export {
@@ -81,5 +83,7 @@ export {
   ultraqr,
   vision,
   wooOrder,
-  omniVillage
+  omniVillage,
+  nyk,
+  aimealplanner
 };

@@ -35,13 +35,14 @@ const Contact = () => {
     if (!formElement) return;
     emailjs
       .sendForm(
-        'service_2vob9id',
+        'service_ymch5pq',
         'template_z0ouz2y',
         formRef.current as unknown as HTMLFormElement,
         'c-Y2UVeK1ll0PWeXf'
       )
       .then(
-        () => {
+        (data) => {
+          console.log("email sent",data);
           setLoading(false);
           alert('Thank you. I will get back to you as soon as possible.');
 
